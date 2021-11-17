@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  text-align: center;
+  font-size: 30px;
+  color: #ff0000
+}
+
+img {
+  width: 25%;
+  height: auto;
+  opacity: 1.0;
+}
+</style>
+</head>
+<body>
+
+<h2>Beta Pichu</h2>
+
+<div class="container">
+  <img src="https://cdn.discordapp.com/attachments/767552371525156904/896049603164663850/beta_pichu.png" alt="Cinque Terre" width="1000" height="300">
+  <p class="bottomleft" id="paragraph">It is beyond the control of even I.<br>Your fate is sealed mortal.</p>
+</div>
+
+
+  <label for="ttext">MEME:</label><br>
+  <input type="text" id="ttext" name="ttext"><br>
+  <input type="submit" value="Submit" onclick="changeText()" value="changeText">
+
+  <script>
+  function changeText(){
+    let paragraphElement = document.getElementById("paragraph")
+    paragraphElement.innerHTML=ttext.value;
+  }
+  </script>
+</body>
+</html>
